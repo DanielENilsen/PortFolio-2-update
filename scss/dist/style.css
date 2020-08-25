@@ -1,0 +1,73 @@
+@font-face {
+  font-family: NasaFont;
+  src: url("../../font/nasalization/nasalization-rg.ttf");
+}
+body {
+  background-color: #010101;
+  color: white;
+  font-family: NasaFont;
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
+body a:hover {
+  color: white;
+}
+
+.firstPageColOne h1 {
+  margin-top: 10%;
+  font-size: 4em;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  margin-top: 8%;
+  margin-left: 30vw;
+}
+
+@media only screen and (min-width: 1200px) {
+  .headerimage {
+    margin-top: 0.5%;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .overideColor {
+    margin-left: 60%;
+  }
+  .overideColor a {
+    font-size: 1.3em;
+    margin-left: 80px;
+  }
+
+  .firstPageColOne h1 {
+    margin-top: 40%;
+    font-size: 4.35em;
+  }
+  .firstPageColOne h3 {
+    font-size: 2em;
+    margin-left: 30%;
+  }
+
+  .btn-secondary {
+    margin-left: 20vw;
+    margin-top: 3%;
+  }
+}
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1199px) and (orientation: landscape) {
+  .firstPageColOne h1 {
+    margin-top: 40%;
+    font-size: 5em;
+  }
+  .firstPageColOne h3 {
+    font-size: 2em;
+  }
+
+  .firstPageColTwo img {
+    width: 60vw;
+  }
+}
