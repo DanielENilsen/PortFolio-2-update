@@ -41,8 +41,8 @@ fetch(spaceXPastAndCurrectRockets).then(function (respone) {
 }); // Nasa Functions
 
 var imageOfToday = function imageOfToday(response) {
-  document.getElementById('innerId').innerHTML += "<h3 class = \"col-12\"> ".concat(response.title, "</h3> <p class = \"col-12\"> ").concat(response.explanation, "</p>");
-  document.getElementById('imageCol').innerHTML += "<img class = \"col-12\" src = ".concat(response.url, ">");
+  document.getElementById('innerId').innerHTML += "<div class = \"scrollDiv\"><h3 class = \"col-12\"> ".concat(response.title, "</h3> <p class = \"col-12\"> ").concat(response.explanation, "</p></div>");
+  document.getElementById('imageCol').innerHTML += "<img class = \"col-12 overHIddn\" src = ".concat(response.url, ">");
 }; //  SpaceX latest rocket lanuch
 
 
@@ -61,6 +61,6 @@ var spaceXDiffRocketsFunc = function spaceXDiffRocketsFunc(respone) {
 
 var pastAndCurrectFunc = function pastAndCurrectFunc(respone) {
   for (var i = 0; i < respone.length; i++) {
-    document.getElementById('spaceIdGrid').innerHTML += "<div class = \"card edigth spxGrid col-10\">\n                                                                <img class = \"card-img-top col-12\" src=\"".concat(respone[i].links.mission_patch_small, "\">\n                                                                <div class=\"card-body\">                                                                 \n                                                                    <h3 class = \"col-10 cardhear\">").concat(respone[i].rocket.rocket_name, "</h3>\n                                                                    <a class=\"col-12 btn btn-primary\" href = \"#\"> See more </a>                                                                                                                                                                                                              \n                                                                </div>\n                                                            </div>");
+    document.getElementById('spaceIdGrid').innerHTML += "<div class = \"card edigth spxGrid col-10 col-lg-4 col-xl-4\">\n                                                                <img class = \"card-img-top col-12\" src=\"".concat(respone[i].links.mission_patch_small, "\">\n                                                                <div class=\"card-body\">                                                                 \n                                                                    <h3 class = \"col-10 cardhear\">").concat(respone[i].rocket.rocket_name, "</h3>\n                                                                    <a class=\"col-12 btn btn-primary\" href = \"#\"> See more </a>                                                                                                                                                                                                              \n                                                                </div>\n                                                            </div>");
   }
 };

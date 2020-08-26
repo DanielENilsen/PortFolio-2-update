@@ -39,6 +39,7 @@ body {
 }
 
 .sectionTwo {
+  margin-top: 10%;
   background-color: #6B6B6B;
   width: 100%;
   height: auto;
@@ -91,4 +92,25 @@ body {
 
 .searchSection {
   margin-top: 10%;
+}
+
+.innerfirstSection {
+  margin-top: 10%;
+}
+
+.swin {
+  margin-top: 10%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .scrollDiv {
+    overflow-y: scroll;
+    height: 50vh;
+  }
+
+  .innerClass {
+    width: 100%;
+    overflow-y: scroll;
+    height: 50vh;
+  }
 }

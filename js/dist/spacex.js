@@ -35,8 +35,8 @@ fetch(spaceXPastAndCurrectRockets).then(respone => respone.json()).then(spaxeXPa
  
 // Nasa Functions
 var imageOfToday = function(response) {    
-    document.getElementById('innerId').innerHTML += `<h3 class = "col-12"> ${response.title}</h3> <p class = "col-12"> ${response.explanation}</p>`;
-    document.getElementById('imageCol').innerHTML += `<img class = "col-12" src = ${response.url}>`;
+    document.getElementById('innerId').innerHTML += `<div class = "scrollDiv"><h3 class = "col-12"> ${response.title}</h3> <p class = "col-12"> ${response.explanation}</p></div>`;
+    document.getElementById('imageCol').innerHTML += `<img class = "col-12 overHIddn" src = ${response.url}>`;
 }
  
 //  SpaceX latest rocket lanuch
@@ -56,7 +56,7 @@ var spaceXDiffRocketsFunc = function(respone) {
 // Past and Currect lanuch of SpaceX Function
 var pastAndCurrectFunc = function(respone) { 
     for(let i = 0; i < respone.length; i++) { 
-        document.getElementById('spaceIdGrid').innerHTML += `<div class = "card edigth spxGrid col-10">
+        document.getElementById('spaceIdGrid').innerHTML += `<div class = "card edigth spxGrid col-10 col-lg-4 col-xl-4">
                                                                 <img class = "card-img-top col-12" src="${respone[i].links.mission_patch_small}">
                                                                 <div class="card-body">                                                                 
                                                                     <h3 class = "col-10 cardhear">${respone[i].rocket.rocket_name}</h3>
