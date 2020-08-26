@@ -2,7 +2,7 @@
   "name": "project-examen-oppgave-update",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
