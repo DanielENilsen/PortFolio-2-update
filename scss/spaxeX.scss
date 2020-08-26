@@ -1,0 +1,104 @@
+$standarColor:#1E1E1E;
+$columColor:#6B6B6B;
+$cardColor:#242121;
+ 
+ 
+@font-face {
+    font-family: NasaFont;
+    src:url("../../font/nasalization/nasalization-rg.ttf")
+}
+ 
+ 
+ 
+body {    
+    margin:0px;
+    padding:0px; 
+    background-color: $standarColor;
+    color:white;
+    font-family: NasaFont;
+}
+ 
+.sectionHeader {
+    background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg"); 
+    height: 100vh;   
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.innertext { 
+    margin-top:30%;
+    margin-left:12%;
+ 
+    &__headText { 
+        font-size:3em;        
+    }
+}
+.overideColor {
+    a { 
+        color:white;
+ 
+    }
+}
+ 
+.icon {
+    margin-left:44%;
+    margin-top:10%;
+     
+    i {
+        font-size:4em;
+    }
+}
+ 
+.sectionTwo { 
+    background-color: $columColor;
+    width: 100%;
+    height: auto;
+ 
+       
+}
+ 
+.row { 
+    margin-right: 0px;
+}
+.edigth {
+    background-color:$cardColor;
+}
+ 
+.innerGridClas { 
+    padding-top:100px;
+}
+ 
+.gridCardOne  { 
+    margin-top:20px;
+    margin-bottom: 100px;
+}
+.spaceXLanuch {
+   margin-top:12px;
+}
+ 
+.spxGrid { 
+    margin-left:6%;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+ 
+.innerSection { 
+    h1 {
+        margin-left:10%;
+        font-size:2em;
+    }
+}
+.inputSection { 
+    margin-left:10%;
+ 
+}
+.cardhear { 
+    margin-left:20%;
+    margin-bottom: 8%;
+}
+.btn-primary {
+    margin-bottom: 10%;
+}
+.searchSection {
+    margin-top:10%;
+}
