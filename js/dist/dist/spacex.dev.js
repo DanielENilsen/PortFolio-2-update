@@ -42,7 +42,7 @@ fetch(spaceXPastAndCurrectRockets).then(function (respone) {
 
 var imageOfToday = function imageOfToday(response) {
   document.getElementById('innerId').innerHTML += "<div class = \"scrollDiv\"><h3 class = \"col-12\"> ".concat(response.title, "</h3> <p class = \"col-12\"> ").concat(response.explanation, "</p></div>");
-  document.getElementById('imageCol').innerHTML += "<img class = \"col-12 overHIddn\" src = ".concat(response.url, ">");
+  document.getElementById('imageCol').innerHTML += "<img class = \"col-12\" src = ".concat(response.url, ">");
 }; //  SpaceX latest rocket lanuch
 
 

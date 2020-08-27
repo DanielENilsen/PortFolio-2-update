@@ -36,7 +36,7 @@ fetch(spaceXPastAndCurrectRockets).then(respone => respone.json()).then(spaxeXPa
 // Nasa Functions
 var imageOfToday = function(response) {    
     document.getElementById('innerId').innerHTML += `<div class = "scrollDiv"><h3 class = "col-12"> ${response.title}</h3> <p class = "col-12"> ${response.explanation}</p></div>`;
-    document.getElementById('imageCol').innerHTML += `<img class = "col-12 overHIddn" src = ${response.url}>`;
+    document.getElementById('imageCol').innerHTML += `<img class = "col-12" src = ${response.url}>`;
 }
  
 //  SpaceX latest rocket lanuch

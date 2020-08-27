@@ -11,7 +11,7 @@ const sass = require('gulp-sass');
 function style() { 
     return src('./scss/**/*.scss')
     .pipe(sass())
-    .pipe(dest('../css'))
+    .pipe(dest('./css'))
     .pipe(browserSync.stream());
    
 }
