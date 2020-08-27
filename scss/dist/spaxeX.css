@@ -118,4 +118,21 @@ body {
     display: inline-block;
     margin-top: 5% !important;
   }
+
+  .overideColor {
+    margin-left: 60%;
+    margin-top: 10px;
+  }
+  .overideColor a {
+    font-size: 1.3em;
+    margin-left: 80px;
+  }
+
+  .innertext {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  .innertext__headText {
+    font-size: 4.5em;
+  }
 }

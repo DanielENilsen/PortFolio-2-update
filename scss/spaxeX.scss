@@ -128,4 +128,21 @@ body {
         margin-top:5% !important;
 
     }
+
+    .overideColor { 
+        margin-left:60%;
+        margin-top:10px;
+        a {
+            font-size: 1.3em;
+            margin-left:80px;                 
+        }
+    }
+
+    .innertext { 
+        margin-top:15%;   
+        margin-left: 10%;  
+        &__headText { 
+            font-size:4.5em;        
+        }
+    }
 }
