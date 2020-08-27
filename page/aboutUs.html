@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="font/fontawesome-free-5.12.0-web/css/all.css">
+        <link rel="stylesheet" href="../font/fontawesome-free-5.12.0-web/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="scss/dist/style.css">
+        <link rel="stylesheet" href="../css/aboutUs.css">
         <title>About us </title>
     </head>
     <body>
@@ -19,7 +19,7 @@
                           <div class = "navbar-nav ml-auto overideColor">
                                 <a href="../index.html">Home</a>                              
                                 <a href="./spaceActyvity.html">Space Activty </a>   
-                                <a href="./aboutUs.html">Contact Us </a>                     
+                                <a href="./aboutUs.html">About Us</a>                     
                             </div>
                           </section>
                         </div>
@@ -27,5 +27,48 @@
                 </header>        
             </main>
         </div>
+        <section class = "aboutSection">
+            <div class = "innerAbout">         
+                <div class = "container">
+                    <h1 class = "col-12 col-lg-12 col-xl-12">About us</h1>
+                    <div class = "row">
+                        <div class = "col-lg-6 col-xl-6">
+                            <p class = "col-12 col-lg-12 col-xl-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p class = "col-12 col-lg-12 col-xl-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class = "col-lg-6 col-xl-6">
+                            <img class = "col-12 col-lg-12 col-xl-12" src = "../img/pexels-photo-4355348.jpeg.jpg">                            
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <section class = "sectionTwo">
+                <div class = "contactUS">
+                    <h1>Feel free to Contact Us</h1>
+                </div>
+                <form>
+                    <div class="form-group">            
+                        <input type="text" class="form-control" placeholder="Enter you name">
+                        <span id= "errorname" class = "formerror">You need to field this out</span> 
+                    </div> 
+                    <div class="form-group">            
+                        <input type="text" class="form-control" placeholder="Enter you last name">
+                        <span id= "lastnameerror"class = "formerror">You need to field this out</span>
+                    </div>                
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone Number"> 
+                        <span id= "emailerror"class = "formerror">You need to field this out</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <span id= "phoneerror"class = "formerror">You need to field this out</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit <i class="fas fa-paper-plane"></i></button>
+                </form>         
+            </section>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

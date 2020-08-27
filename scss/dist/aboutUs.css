@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: NasaFont;
+  src: url("../font/nasalization/nasalization-rg.ttf");
+}
+body {
+  background-color: #1E1E1E;
+  color: white;
+  font-family: NasaFont;
+}
+body a {
+  color: white;
+}
+body a:hover {
+  color: white;
+}
+
+.aboutSection {
+  margin-top: 5%;
+}
+.aboutSection p {
+  font-family: "Quicksand", sans-serif;
+}
+
+.sectionTwo {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.sectionTwo form {
+  width: 90%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contactUS {
+    margin-bottom: 3%;
+  }
+  .contactUS h1 {
+    font-size: 4em;
+  }
+
+  .sectionTwo {
+    font-family: "Quicksand", sans-serif;
+    margin-left: 15vw;
+  }
+  .sectionTwo form input {
+    margin-top: 2%;
+    background-color: #2B2828;
+    width: 80%;
+    border: solid 1px #707070;
+    color: white;
+  }
+  .sectionTwo form button {
+    height: 6vh;
+    width: 10vw;
+    margin-left: 75%;
+    background-color: #2B2828;
+    border: none;
+    color: white;
+  }
+
+  .overideColor {
+    margin-left: 60%;
+    margin-top: 10px;
+  }
+  .overideColor a {
+    font-size: 1.3em;
+    margin-left: 80px;
+  }
+
+  .innerAbout h1 {
+    font-size: 4em;
+    margin-bottom: 4%;
+  }
+  .innerAbout p {
+    font-size: 1.15em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .sectionTwo {
+    margin-left: 18vw;
+  }
+}

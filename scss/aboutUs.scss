@@ -1,0 +1,108 @@
+$standarColor:#1E1E1E;
+$columColor:#6B6B6B;
+$cardColor:#242121;
+$btnColor:#2B2828;
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Quicksand:wght@500&display=swap');
+
+@font-face {
+    font-family: NasaFont;
+    src:url("../font/nasalization/nasalization-rg.ttf")
+}
+ 
+body { 
+   background-color:$standarColor;
+   color:white;
+   font-family: NasaFont;
+   a {
+       color:white;
+   }
+   a:hover { 
+    color:white;
+
+}
+}
+
+.aboutSection {    
+    margin-top:5%;
+    p {
+        font-family: 'Quicksand', sans-serif;
+
+    }
+   
+}
+.sectionTwo {
+    margin-top:10%;
+    margin-left:10%;
+    margin-bottom: 10%;
+    form {
+        width: 90%;
+    }
+}
+
+@media only screen  and (min-width: 1200px) {
+
+    .contactUS {
+        h1 {
+            font-size:4em; 
+            
+        }
+        margin-bottom: 3%;
+    }
+
+    .sectionTwo {
+        font-family: 'Quicksand', sans-serif;   
+        margin-left:15vw;
+     
+        form {
+           
+            input {
+                margin-top:2%;
+                background-color: $btnColor;
+                width: 80%;
+                border: solid 1px #707070;                
+                color:white
+            }
+            button {
+                height: 6vh;
+                width: 10vw;
+                margin-left:75%;
+                background-color: $btnColor;
+                border:none;
+                color:white;
+
+            }
+        }
+    }
+
+    .overideColor { 
+        margin-left:60%;
+        margin-top:10px;
+        a {
+            font-size: 1.3em;
+            margin-left:80px;                 
+        }
+    }
+
+
+    .innerAbout {
+        
+        h1 {
+            font-size:4em;
+            margin-bottom: 4%;
+        }
+        p {
+            font-size:1.15em;
+            
+        }      
+    }
+}
+
+@media only screen  and (min-width: 1600px) {
+
+    .sectionTwo {
+          
+        margin-left:18vw;
+    }
+
+}
