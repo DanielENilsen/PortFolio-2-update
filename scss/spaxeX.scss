@@ -3,6 +3,8 @@ $columColor:#6B6B6B;
 $cardColor:#242121;
  
  
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
     font-family: NasaFont;
     src:url("../../font/nasalization/nasalization-rg.ttf")
@@ -16,6 +18,11 @@ body {
     background-color: $standarColor;
     color:white;
     font-family: NasaFont;
+
+    p { 
+        font-family: 'Quicksand', sans-serif;
+
+    }
 }
  
 .sectionHeader {
@@ -59,6 +66,7 @@ body {
 
 .downToImage {
     width: 90%;
+    height: 55%;
     margin-left:5%;
     margin-top:5%;
     object-fit: cover;
@@ -98,7 +106,7 @@ body {
     }
 }
 .inputSection { 
-    margin-left:10%;
+    margin-left:5%;
  
 }
 .cardhear { 
@@ -128,6 +136,15 @@ body {
 }
 
 @media only screen  and (min-width: 1200px) {
+
+    .innerSection {
+        margin-bottom: 100px; 
+        h1 { 
+            margin-left:24vw;           
+            font-size:3em;
+            margin-bottom: 100px; 
+        }
+    }
     
     .scrollDiv {
         overflow-y: scroll;

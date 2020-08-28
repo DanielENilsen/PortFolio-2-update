@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: NasaFont;
   src: url("../../font/nasalization/nasalization-rg.ttf");
@@ -8,6 +10,9 @@ body {
   background-color: #1E1E1E;
   color: white;
   font-family: NasaFont;
+}
+body p {
+  font-family: "Quicksand", sans-serif;
 }
 
 .sectionHeader {
@@ -47,6 +52,7 @@ body {
 
 .downToImage {
   width: 90%;
+  height: 55%;
   margin-left: 5%;
   margin-top: 5%;
   object-fit: cover;
@@ -87,7 +93,7 @@ body {
 }
 
 .inputSection {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .cardhear {
@@ -119,6 +125,15 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .innerSection {
+    margin-bottom: 100px;
+  }
+  .innerSection h1 {
+    margin-left: 24vw;
+    font-size: 3em;
+    margin-bottom: 100px;
+  }
+
   .scrollDiv {
     overflow-y: scroll;
     height: 50vh;

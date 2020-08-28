@@ -2,7 +2,9 @@ $standarColor:#1E1E1E;
 $columColor:#6B6B6B;
 $cardColor:#242121;
  
- 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: NasaFont;
     src:url("../../font/nasalization/nasalization-rg.ttf")
@@ -24,3 +26,26 @@ body {
         color:white;
     }
 }
+
+.imgClass {
+    object-fit: cover;
+    
+}
+.edithClass {
+    font-family: 'Roboto', sans-serif;    
+    margin-top: 10%;
+    margin-left:0%;
+ }
+
+ .innclass { 
+     margin-top:5%;
+ }
+ .gridEdit {
+     color:black;
+ }
+
+ .h1inner {   
+    margin-left:28vw;           
+    font-size:5em;
+    margin-bottom: 50px;
+ }

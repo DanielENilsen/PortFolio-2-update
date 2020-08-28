@@ -57,8 +57,27 @@ if(linkid === "value3") {
     }).catch(error => console.log(error));
 
     var marsImg = function(reponsive) {
+        innerhtml.innerHTML+= ` <div class="container-fluid">
+                                    <h1 class = "h1inner">Images of Mars</h1>                                
+                                    <div id = "inx" class = "row"></div>
+                                </div>`
         for(let i = 0; i < 4; i++) {
-            innerhtml.innerHTML+= `<div class = 'myFunc'><div class = 'mainDisplay'><article><header><h2> Name: ${reponsive.photos[i].camera.full_name}</h2><h3> Date: ${reponsive.photos[i].earth_date}</h3></header></div><img src="${reponsive.photos[i].img_src}"width='80%'></div>`;
+            document.getElementById('inx').innerHTML +=`
+                                            <div class = "col-lg-3 col-xl-3 gridEdit">
+                                                <div class = "card col-lg-12 col-xl-12">
+                                                    <div class = "card__edith">
+                                                        <div class = "img-square-wrapper">
+                                                            <img class = "card-img-top" src = "${reponsive.photos[i].img_src}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">${reponsive.photos[i].camera.full_name}</h3>
+                                                        <p class="card-text">${reponsive.photos[i].earth_date}</p>                                            
+                                                    </div>                                      
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
         }
     }
 }
@@ -66,70 +85,27 @@ else {
     fetch(spaceXPastAndCurrectRockets + fligth_number).then(reponsive => reponsive.json()).then(spaceXRrock => { 
         console.log(spaceXRrock);
         spacexWorl(spaceXRrock)
-    }).catch(error => console.log(error))
+    }).catch(error => console.log(error));
 
     function spacexWorl(test) { 
-        for(var i = 0;i < 1; i++ ) {
-            innerhtml.innerHTM += "<h1>Rocket Lanch</h1>";       
-           if(test.links.mission_patch_small === null) {               
-               innerhtml.innerHTML += "<img src='js/dummyast.jpg'></img>";          
-            
-           }else if(test.links.mission_patch_small !== null) {
-               innerhtml.innerHTML += "<img src='" +test.links.mission_patch_small + "'>";
-           }       
-           if (test.launch_year === null) {   
-                    innerhtml.innerHTML += "<h1>Year: Not provided yet  </h1>";
-         
-           }else if (test.launch_year !== null) { 
-               innerhtml.innerHTML += "<h1> Year: " + test.launch_year + "</h1>";
-   
-           }
-           if(test.launch_date_local === null) { 
-               innerhtml.innerHTML += "<h1> Time: Not provided yet </h1>";
-               
-           }else if (test.launch_date_local !== null) {
-               innerhtml.innerHTML += "<h1> Date: " + test.launch_date_local + "</h1>";
-   
-           }
-           if(test.rocket.rocket_name === null) { 
-               innerhtml.innerHTML += "<h1> Rocket: Not provided yet </h1>"; 
-               
-           }
-           if(test.details === null) { 
-               innerhtml.innerHTML += "<p> Details: Not provided yet</p>"; 
-               
-           }else if (test.details !== null) { 
-               innerhtml.innerHTML += "<p> Details: " + test.details + "</p>"; 
-           
-           }
-           if(test.links.article_link === null) {
-               innerhtml.innerHTML += "<a>Artical: There are no article yet </a>";
-               
-           }else if (test.links.article_link !== null) { 
-               innerhtml.innerHTML += "<a href='"+ test.links.article_link +"'> Artical</a>";
-           }
-           if(test.links.video_link === null) { 
-               innerhtml.innerHTML += "<a>Youtube clip: There are no YouTube clip yet </a>";
-   
-           }else if (test.links.video_link !== null) {
-               innerhtml.innerHTML += "<a href='"+ test.links.video_link +"'> Youtube clip </a>";
-           } else {         
-            innerhtml.innerHTML += "<h1>Rocket Lanch</h1>";
-           innerhtml.innerHTML += "<img src='" +test.links.mission_patch_small + "'>";
-           innerhtml.innerHTML += "<h1> Year: " + test.launch_year + "</h1>";
-           innerhtml.innerHTML += "<h1> Date: " + test.launch_date_local + "</h1>";
-           innerhtml.innerHTML += "<h1> Rocket: " + test.rocket.rocket_name + "</h1>"; 
-           innerhtml.innerHTML += "<p> Details: " + test.details + "</p>"; 
-           innerhtml.innerHTML += "<a href='"+ test.links.article_link +"'> Artical</a>";
-           innerhtml.innerHTML += "<a href='"+ test.links.video_link +"'> Youtube clip </a>";
-           }
-         }
-      }
-   
-   
-   
-   
-   
-
+        for(var i = 0;i < 1; i++ ) {           
+            innerhtml.innerHTML += `<div class="container">
+                                        <div class = "row">
+                                            <div class="col-lg-7 col-xl-7">
+                                                <img  class = "card-img-top col-lg-8 col-xl-8 imgClass" src="${test.links.mission_patch_small}">
+                                            </div>                                            
+                                            <div class="col-lg-5 col-xl-5 edithClass">
+                                                <h2> Year: ${test.launch_year}</h2>
+                                                <h4> Date: ${test.launch_date_local}</h4>
+                                                <h5> Rocket: ${test.rocket.rocket_name}</h5> 
+                                                <h5> Details: ${test.details}</h5> 
+                                                <a href="${test.links.article_link}">Artical</a>
+                                                <a href="${test.links.video_link}">Youtube clip</a>
+                                            </div>
+                                        </div>
+                                    </div>`;                                    
+              
+        }
+    }
 }
 

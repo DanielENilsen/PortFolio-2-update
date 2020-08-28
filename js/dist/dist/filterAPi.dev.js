@@ -60,63 +60,16 @@ if (linkid === "value3") {
   });
 
   var marsImg = function marsImg(reponsive) {
+    innerhtml.innerHTML += " <div class=\"container-fluid\">\n                                    <h1 class = \"h1inner\">Images of Mars</h1>                                \n                                    <div id = \"inx\" class = \"row\"></div>\n                                </div>";
+
     for (var i = 0; i < 4; i++) {
-      innerhtml.innerHTML += "<div class = 'myFunc'><div class = 'mainDisplay'><article><header><h2> Name: ".concat(reponsive.photos[i].camera.full_name, "</h2><h3> Date: ").concat(reponsive.photos[i].earth_date, "</h3></header></div><img src=\"").concat(reponsive.photos[i].img_src, "\"width='80%'></div>");
+      document.getElementById('inx').innerHTML += "\n                                            <div class = \"col-lg-3 col-xl-3 gridEdit\">\n                                                <div class = \"card col-lg-12 col-xl-12\">\n                                                    <div class = \"card__edith\">\n                                                        <div class = \"img-square-wrapper\">\n                                                            <img class = \"card-img-top\" src = \"".concat(reponsive.photos[i].img_src, "\">\n                                                        </div>\n                                                    </div>\n                                                    <div class=\"card-body\">\n                                                        <h3 class=\"card-title\">").concat(reponsive.photos[i].camera.full_name, "</h3>\n                                                        <p class=\"card-text\">").concat(reponsive.photos[i].earth_date, "</p>                                            \n                                                    </div>                                      \n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>");
     }
   };
 } else {
   var spacexWorl = function spacexWorl(test) {
     for (var i = 0; i < 1; i++) {
-      innerhtml.innerHTM += "<h1>Rocket Lanch</h1>";
-
-      if (test.links.mission_patch_small === null) {
-        innerhtml.innerHTML += "<img src='js/dummyast.jpg'></img>";
-      } else if (test.links.mission_patch_small !== null) {
-        innerhtml.innerHTML += "<img src='" + test.links.mission_patch_small + "'>";
-      }
-
-      if (test.launch_year === null) {
-        innerhtml.innerHTML += "<h1>Year: Not provided yet  </h1>";
-      } else if (test.launch_year !== null) {
-        innerhtml.innerHTML += "<h1> Year: " + test.launch_year + "</h1>";
-      }
-
-      if (test.launch_date_local === null) {
-        innerhtml.innerHTML += "<h1> Time: Not provided yet </h1>";
-      } else if (test.launch_date_local !== null) {
-        innerhtml.innerHTML += "<h1> Date: " + test.launch_date_local + "</h1>";
-      }
-
-      if (test.rocket.rocket_name === null) {
-        innerhtml.innerHTML += "<h1> Rocket: Not provided yet </h1>";
-      }
-
-      if (test.details === null) {
-        innerhtml.innerHTML += "<p> Details: Not provided yet</p>";
-      } else if (test.details !== null) {
-        innerhtml.innerHTML += "<p> Details: " + test.details + "</p>";
-      }
-
-      if (test.links.article_link === null) {
-        innerhtml.innerHTML += "<a>Artical: There are no article yet </a>";
-      } else if (test.links.article_link !== null) {
-        innerhtml.innerHTML += "<a href='" + test.links.article_link + "'> Artical</a>";
-      }
-
-      if (test.links.video_link === null) {
-        innerhtml.innerHTML += "<a>Youtube clip: There are no YouTube clip yet </a>";
-      } else if (test.links.video_link !== null) {
-        innerhtml.innerHTML += "<a href='" + test.links.video_link + "'> Youtube clip </a>";
-      } else {
-        innerhtml.innerHTML += "<h1>Rocket Lanch</h1>";
-        innerhtml.innerHTML += "<img src='" + test.links.mission_patch_small + "'>";
-        innerhtml.innerHTML += "<h1> Year: " + test.launch_year + "</h1>";
-        innerhtml.innerHTML += "<h1> Date: " + test.launch_date_local + "</h1>";
-        innerhtml.innerHTML += "<h1> Rocket: " + test.rocket.rocket_name + "</h1>";
-        innerhtml.innerHTML += "<p> Details: " + test.details + "</p>";
-        innerhtml.innerHTML += "<a href='" + test.links.article_link + "'> Artical</a>";
-        innerhtml.innerHTML += "<a href='" + test.links.video_link + "'> Youtube clip </a>";
-      }
+      innerhtml.innerHTML += "<div class=\"container\">\n                                        <div class = \"row\">\n                                            <div class=\"col-lg-7 col-xl-7\">\n                                                <img  class = \"card-img-top col-lg-8 col-xl-8 imgClass\" src=\"".concat(test.links.mission_patch_small, "\">\n                                            </div>                                            \n                                            <div class=\"col-lg-5 col-xl-5 edithClass\">\n                                                <h2> Year: ").concat(test.launch_year, "</h2>\n                                                <h4> Date: ").concat(test.launch_date_local, "</h4>\n                                                <h5> Rocket: ").concat(test.rocket.rocket_name, "</h5> \n                                                <h5> Details: ").concat(test.details, "</h5> \n                                                <a href=\"").concat(test.links.article_link, "\">Artical</a>\n                                                <a href=\"").concat(test.links.video_link, "\">Youtube clip</a>\n                                            </div>\n                                        </div>\n                                    </div>");
     }
   };
 
