@@ -1,0 +1,17 @@
+@font-face {
+  font-family: NasaFont;
+  src: url("../../font/nasalization/nasalization-rg.ttf");
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1E1E1E;
+  color: white;
+  font-family: NasaFont;
+}
+body a {
+  color: white;
+}
+body a:hover {
+  color: white;
+}

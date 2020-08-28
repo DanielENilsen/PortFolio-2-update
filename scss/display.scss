@@ -1,0 +1,26 @@
+$standarColor:#1E1E1E;
+$columColor:#6B6B6B;
+$cardColor:#242121;
+ 
+ 
+@font-face {
+    font-family: NasaFont;
+    src:url("../../font/nasalization/nasalization-rg.ttf")
+}
+ 
+ 
+ 
+body {    
+    margin:0px;
+    padding:0px; 
+    background-color: $standarColor;
+    color:white;
+    font-family: NasaFont;
+
+    a {
+        color:white;
+    }
+    a:hover { 
+        color:white;
+    }
+}

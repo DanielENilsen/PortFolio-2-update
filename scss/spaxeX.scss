@@ -42,7 +42,7 @@ body {
  
 .icon {
     margin-left:44%;
-    margin-top:10%;
+    margin-top:5%;
      
     i {
         font-size:4em;
@@ -56,10 +56,19 @@ body {
     height: auto;       
 }
  
+
+.downToImage {
+    width: 90%;
+    margin-left:5%;
+    margin-top:5%;
+    object-fit: cover;
+}
+
 .row { 
     margin-right: 0px;
 }
 .edigth {
+    height: 40vh;
     background-color:$cardColor;
 }
  
@@ -73,6 +82,7 @@ body {
 }
 .spaceXLanuch {
    margin-top:12px;
+   margin-bottom: 20%;
 }
  
 .spxGrid { 
@@ -92,8 +102,11 @@ body {
  
 }
 .cardhear { 
-    margin-left:20%;
-    margin-bottom: 8%;
+    
+    margin-bottom: 8%;   
+}
+.bodyCover {
+    object-fit: cover;
 }
 .btn-primary {
     margin-bottom: 10%;
@@ -110,23 +123,26 @@ body {
     margin-top:10%;
 }
 
-@media only screen  and (min-width: 1200px) {
+.editj {
+    object-fit: contain;
+}
 
-    .scrollDiv { 
+@media only screen  and (min-width: 1200px) {
+    
+    .scrollDiv {
         overflow-y: scroll;
         height:50vh;
     }
     
     .innerClass {
-        width: 100%;        
+        width: 95%;        
         overflow-y: scroll;
-        height:auto;
+        height:90vh;
     }
 
     .overHIddn {
         display:inline-block;
         margin-top:5% !important;
-
     }
 
     .overideColor { 
@@ -139,10 +155,25 @@ body {
     }
 
     .innertext { 
-        margin-top:15%;   
-        margin-left: 10%;  
+        margin-top:20%;   
+        margin-left: 8vh;  
         &__headText { 
-            font-size:4.5em;        
+            font-size:7vh;        
         }
+    }
+    .cardhear {       
+        font-size:1.2em;     
+    }
+
+    .newBtn { 
+        margin-left:5%;
+    }
+}
+
+@media only screen  and (min-width: 1600px) {
+
+    .cardhear {
+        margin-left:10%;
+        font-size:1.6em;     
     }
 }
