@@ -28,7 +28,7 @@ body {
 
 .gridEdit {
   margin-bottom: 5%;
-  color: black; }
+  color: white; }
 
 .h1inner {
   margin-left: 28vw;
@@ -46,6 +46,9 @@ body {
 .overflowImg {
   object-fit: cover;
   height: 35vh; }
+
+.card {
+  background-color: #191c1f; }
 
 @media only screen and (min-width: 1200px) {
   .overideColor {
