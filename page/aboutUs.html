@@ -46,27 +46,28 @@
                 <div class = "contactUS">
                     <h1>Feel free to Contact Us</h1>
                 </div>
-                <form>
+                <div class = "formClass">
                     <div class="form-group">            
-                        <input type="text" class="form-control" placeholder="Enter you name">
+                        <input id = "name" type="text" class="form-control" placeholder="Enter you name">
                         <span id= "errorname" class = "formerror">You need to field this out</span> 
                     </div> 
                     <div class="form-group">            
-                        <input type="text" class="form-control" placeholder="Enter you last name">
+                        <input id = "lastName" type="text" class="form-control" placeholder="Enter you last name">
                         <span id= "lastnameerror"class = "formerror">You need to field this out</span>
-                    </div>                
+                    </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Phone Number"> 
+                        <input id = "email" type="email" class="form-control" placeholder="Email">
                         <span id= "emailerror"class = "formerror">You need to field this out</span>
-                    </div>
+                    </div>             
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input id="tlfNumber" type="text" class="form-control" placeholder="Phone Number"> 
                         <span id= "phoneerror"class = "formerror">You need to field this out</span>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit <i class="fas fa-paper-plane"></i></button>
-                </form>         
+                    </div>                   
+                    <button  id = "contactButton" class="btn btn-primary">Submit <i class="fas fa-paper-plane"></i></button>
+                </div>         
             </section>
         </section>
+        <script src="../js/dist/verdict.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

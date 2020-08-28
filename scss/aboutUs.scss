@@ -54,24 +54,26 @@ body {
         font-family: 'Quicksand', sans-serif;   
         margin-left:15vw;
      
-        form {
-           
-            input {
-                margin-top:2%;
-                background-color: $btnColor;
-                width: 80%;
-                border: solid 1px #707070;                
-                color:white
-            }
-            button {
-                height: 6vh;
-                width: 10vw;
-                margin-left:75%;
-                background-color: $btnColor;
-                border:none;
-                color:white;
+    
+    }
 
-            }
+    .formClass {
+           
+        input {
+            margin-top:2%;
+            background-color: $btnColor;
+            width: 80%;
+            border: solid 1px #707070;                
+            color:white
+        }
+        button {
+            height: 6vh;
+            width: 10vw;
+            margin-left:75%;
+            background-color: $btnColor;
+            border:none;
+            color:white;
+
         }
     }
 
@@ -97,6 +99,13 @@ body {
         }      
     }
 }
+.formerror { 
+    display: none;
+    color:red;
+    font-family: sans-serif;
+  
+  }
+  
 
 @media only screen  and (min-width: 1600px) {
 

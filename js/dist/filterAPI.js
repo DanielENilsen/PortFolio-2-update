@@ -27,8 +27,27 @@ if(linkid === "value1") {
     }).catch(error => console.log(error));
 
     var displaySpaceXRocket = function(reponsive) { 
-        for(let i = 0; i < reponsive.length; i++){
-            innerhtml.innerHTML += `<div class = "inner"><img src=${reponsive[i].flickr_images[i]}</div>`;
+        innerhtml.innerHTML+= ` <div class="container-fluid flow">
+                                    <h1 class = "h1inner">SpaceX rockets</h1>                                
+                                    <div id = "inx" class = "row"></div>
+                                </div>`
+        for(let i = 0; i < reponsive.length; i++) {
+            document.getElementById('inx').innerHTML +=`
+                                            <div class = "col-lg-3 col-xl-3 gridEdit">
+                                                <div class = "card col-lg-12 col-xl-12">
+                                                    <div class = "card__edith">
+                                                        <div class = "img-square-wrapper">
+                                                            <img class = "card-img-top overflowImg" src = "${reponsive[i].flickr_images[i]}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body overflow">
+                                                        <h3 class="card-title">${reponsive[i].rocket_name}</h3>
+                                                        <p class="card-text">${reponsive[i].description}</p>                                            
+                                                    </div>                                      
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
         }
     }
   
@@ -42,9 +61,26 @@ if(linkid === "value2") {
     }).catch(error => console.log(error));
     
     var apolloEleven = function(reponsive) {
-        for(let i = 0;i < 10; i++) {
-            innerhtml.innerHTML+= `<div class = "apolloDiv"><p>${reponsive.collection.items[i].data[0].description}</p></div>`;         
-
+        innerhtml.innerHTML+= ` <div class="container-fluid flow">
+                                    <h1 class = "h1inner">SpaceX rockets</h1>                                
+                                    <div id = "inx" class = "row"></div>
+                                </div>`
+        for(let i = 0; i < 10; i++) {
+            document.getElementById('inx').innerHTML +=`
+                                            <div class = "col-lg-3 col-xl-3 gridEdit">
+                                                <div class = "card col-lg-12 col-xl-12">
+                                                    <div class = "card__edith">
+                                                        <div class = "img-square-wrapper">
+                                                            <img class = "card-img-top overflowImg" src = "${ reponsive.collection.items[i].links[0].href}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body overflow">                                                        
+                                                        <p class="card-text">${ reponsive.collection.items[i].data[0].description }</p>                                            
+                                                    </div>                                      
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
         }
     }   
 }
@@ -57,7 +93,7 @@ if(linkid === "value3") {
     }).catch(error => console.log(error));
 
     var marsImg = function(reponsive) {
-        innerhtml.innerHTML+= ` <div class="container-fluid">
+        innerhtml.innerHTML+= ` <div class="container-fluid flow">
                                     <h1 class = "h1inner">Images of Mars</h1>                                
                                     <div id = "inx" class = "row"></div>
                                 </div>`

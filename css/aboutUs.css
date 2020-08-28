@@ -32,19 +32,19 @@ body {
   .sectionTwo {
     font-family: 'Quicksand', sans-serif;
     margin-left: 15vw; }
-    .sectionTwo form input {
-      margin-top: 2%;
-      background-color: #2B2828;
-      width: 80%;
-      border: solid 1px #707070;
-      color: white; }
-    .sectionTwo form button {
-      height: 6vh;
-      width: 10vw;
-      margin-left: 75%;
-      background-color: #2B2828;
-      border: none;
-      color: white; }
+  .formClass input {
+    margin-top: 2%;
+    background-color: #2B2828;
+    width: 80%;
+    border: solid 1px #707070;
+    color: white; }
+  .formClass button {
+    height: 6vh;
+    width: 10vw;
+    margin-left: 75%;
+    background-color: #2B2828;
+    border: none;
+    color: white; }
   .overideColor {
     margin-left: 60%;
     margin-top: 10px; }
@@ -56,6 +56,11 @@ body {
     margin-bottom: 4%; }
   .innerAbout p {
     font-size: 1.15em; } }
+
+.formerror {
+  display: none;
+  color: red;
+  font-family: sans-serif; }
 
 @media only screen and (min-width: 1600px) {
   .sectionTwo {

@@ -41,6 +41,7 @@ body {
      margin-top:5%;
  }
  .gridEdit {
+     margin-bottom: 5%;
      color:black;
  }
 
@@ -49,3 +50,32 @@ body {
     font-size:5em;
     margin-bottom: 50px;
  }
+
+ .flow { 
+     margin-bottom: 100px;
+ }
+ .overflow {
+     object-fit: cover;
+     height: 25vh;
+     overflow-y: scroll;
+ }
+ .overflowImg {
+    object-fit: cover;
+    height: 35vh;
+
+ }
+
+ @media only screen  and (min-width: 1200px) {
+
+    .overideColor { 
+        margin-left:60%;
+        margin-top:10px;
+        a {
+            font-size: 1.3em;
+            margin-left:80px;                 
+        }
+    }
+
+ }
+
+

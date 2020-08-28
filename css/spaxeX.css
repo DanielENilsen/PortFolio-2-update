@@ -4,6 +4,9 @@
   font-family: NasaFont;
   src: url("../../font/nasalization/nasalization-rg.ttf"); }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -31,9 +34,15 @@ body {
 
 .icon {
   margin-left: 44%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  cursor: pointer; }
   .icon i {
     font-size: 4em; }
+  .icon a {
+    color: white; }
+  .icon a:hover {
+    color: white;
+    text-decoration: none; }
 
 .sectionTwo {
   margin-top: 10%;
@@ -52,7 +61,8 @@ body {
   margin-right: 0px; }
 
 .edigth {
-  height: 40vh;
+  margin-left: 3%;
+  height: 60vh;
   background-color: #242121; }
 
 .innerGridClas {
@@ -67,7 +77,8 @@ body {
   margin-bottom: 20%; }
 
 .spxGrid {
-  margin-left: 6%;
+  background-color: #242121;
+  margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 50px; }
 
@@ -99,7 +110,43 @@ body {
 .editj {
   object-fit: contain; }
 
+@keyframes smoothFrame {
+  from {
+    opacity: 0;
+    margin-top: 45%; }
+  to {
+    opacity: 1;
+    margin-top: 40%; } }
+
+@keyframes smoothFrame2 {
+  from {
+    opacity: 0;
+    margin-top: 5%; }
+  to {
+    opacity: 1;
+    margin-top: 0%; } }
+
+@keyframes smoothFrame3 {
+  from {
+    opacity: 0;
+    margin-top: 5%; }
+  to {
+    opacity: 1;
+    margin-top: 3%; } }
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 1000px) and (orientation: landscape) {
+  .spxGrid {
+    margin-left: 10%; }
+  .edigth {
+    height: 150vh; } }
+
 @media only screen and (min-width: 1200px) {
+  .icon {
+    display: none;
+    animation: smoothFrame2 1.5s; }
+  .innertext {
+    animation: smoothFrame 1.5s;
+    display: none; }
   .innerSection {
     margin-bottom: 100px; }
     .innerSection h1 {
@@ -133,6 +180,35 @@ body {
     margin-left: 5%; } }
 
 @media only screen and (min-width: 1600px) {
+  .icon {
+    display: none;
+    animation: smoothFrame 1.5s; }
+  .innertext {
+    display: none;
+    animation: smoothFrame2 1.5s; }
   .cardhear {
     margin-left: 10%;
-    font-size: 1.6em; } }
+    font-size: 1.6em; }
+  @keyframes smoothFrame2 {
+    from {
+      opacity: 0;
+      margin-top: 5%; }
+    to {
+      opacity: 1;
+      margin-top: 0%; } } }
+
+@keyframes smoothFrame {
+  from {
+    opacity: 0;
+    margin-top: 25%; }
+  to {
+    opacity: 1;
+    margin-top: 20%; } }
+
+@keyframes smoothFrame2 {
+  from {
+    opacity: 0;
+    margin-top: 10%; }
+  to {
+    opacity: 1;
+    margin-top: 5%; } }
