@@ -182,20 +182,20 @@ body {
 @media only screen and (min-width: 1600px) {
   .icon {
     display: none;
-    animation: smoothFrame 1.5s; }
+    animation: smoothFrame2 1.5s; }
   .innertext {
     display: none;
-    animation: smoothFrame2 1.5s; }
+    animation: smoothFr 1.5s; }
   .cardhear {
     margin-left: 10%;
     font-size: 1.6em; }
-  @keyframes smoothFrame2 {
+  @keyframes smoothFr {
     from {
       opacity: 0;
-      margin-top: 5%; }
+      margin-top: 30%; }
     to {
       opacity: 1;
-      margin-top: 0%; } } }
+      margin-top: 20%; } } }
 
 @keyframes smoothFrame {
   from {
